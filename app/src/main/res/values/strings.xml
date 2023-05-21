@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">NotePad_DEV</string>
+    <string name="edit_usuario">Usuário</string>
+    <string name="edit_senha">Senha</string>
+    <string name="edit_botao">Entrar</string>
+    <string name="edit_escolha">ou</string>
+    <string name="botao_Sair">Sair</string>
+    <string name="todo">TODO</string>
+
+
 </resources>
