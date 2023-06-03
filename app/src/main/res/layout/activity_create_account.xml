@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CreateAccount_Activity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:src="@android:drawable/ic_menu_revert"
+        app:backgroundTint="@color/azul_medio"
+        app:rippleColor="@color/light_mode"
+        app:tint="@color/light_mode"
+        app:useCompatPadding="true"
+        android:contentDescription="@string/contente_description1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="616dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/person_add_black_48dp"
+            app:tint="#673AB7"
+            android:contentDescription="@string/contente_description2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic|bold"
+            android:textSize="20sp"
+            android:text="@string/criar_conta_texto" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:autofillHints="emailAddress"
+            android:hint="@string/edit_usuario"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:autofillHints="password"
+            android:hint="@string/edit_senha"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:autofillHints="password"
+            android:hint="@string/edit_repetir_senha"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/buttonCriarEntrar"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="@string/edit_botao_criar"
+            android:textColorHighlight="@color/light_mode" />
+
+    </LinearLayout>
+</RelativeLayout>
