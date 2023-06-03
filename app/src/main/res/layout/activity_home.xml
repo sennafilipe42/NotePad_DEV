@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home_Activity">
 
-    <Button
-        android:id="@+id/botaoSair"
+    <include
+        android:id="@+id/toolbarHome"
+        layout="@layout/toolbar_activity_home"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addNotePAD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/botao_Sair" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/purple"
+        android:src="@drawable/baseline_add_24"
+        android:tint="@color/light_mode"
+        app:rippleColor="@color/light_mode"
+        app:tint="@color/light_mode"
+        app:useCompatPadding="true"
+        android:contentDescription="@string/contente_description3"
+        android:elevation="10dp"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
-    </androidx.recyclerview.widget.RecyclerView>
-</LinearLayout>
+</RelativeLayout>
