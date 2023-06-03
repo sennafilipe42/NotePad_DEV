@@ -1,11 +1,16 @@
 <resources>
     <string name="app_name">NotePad_DEV</string>
-    <string name="edit_usuario">Usuário</string>
+    <string name="edit_usuario">E-mail</string>
     <string name="edit_senha">Senha</string>
+    <string name="edit_repetir_senha">Repetir Senha</string>
     <string name="edit_botao">Entrar</string>
+    <string name="edit_botao_criar">Criar e Entrar</string>
     <string name="edit_escolha">ou</string>
     <string name="botao_Sair">Sair</string>
     <string name="todo">TODO</string>
-
-
+    <string name="text_nao_tem_conta">Não possui conta?</string>
+    <string name="link_criar_conta">Criar conta.</string>
+    <string name="criar_conta_texto">Só mais alguns passos…</string>
+    <string name="contente_description1">Back</string>
+    <string name="contente_description2">IconeCreateAccount</string>
 </resources>
