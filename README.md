@@ -24,15 +24,23 @@ Implementações criadas para o projeto:
 
 
 🔥 Login com FirebaseAuth usando os métodos:
+
     ✔️GoogleSignInOptions(Faz o login com conta do Google);
+    
     ✔️signInWithEmailAndPassword(Faz login com e-mail e senha cadastrados no Firebase);
+    
     ✔️createUserWithEmailAndPassword(Cria uma conta com e-mail e senha no Firebase);
 
 📱 Acitivities/interfaces criadas:
+
     ✔️Carregamento_Activity(Apresenta uma tela de carregamento ao iniciar o APP);
+    
     ✔️CreateAccount_Activity(Tela para criação de conta usando o Firebase);
+    
     ✔️Home_Activity(Tela principal do APP, onde apresenta os NotePADs);
+    
     ✔️Login_Activity(Tela para fazer login com conta Google ou conta Firebase criada);
+    
     ✔️MainActivity(Activity que chama a de Carregamento e subsequente o restante);
 
 
