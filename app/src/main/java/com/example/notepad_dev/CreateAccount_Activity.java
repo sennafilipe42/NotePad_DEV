@@ -35,7 +35,7 @@ public class CreateAccount_Activity extends AppCompatActivity {
 
 
         binding.buttonCriarEntrar.setOnClickListener(v->criarConta());
-        binding.floatingActionButton.setOnClickListener(v->abrirLogin());
+        binding.botaoBack.setOnClickListener(v->abrirLogin());
     }
 
     public void criarConta(){
