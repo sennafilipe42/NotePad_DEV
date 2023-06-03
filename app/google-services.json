@@ -7,14 +7,22 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:61017014612:android:0415c44ac6392185ac88c1",
+        "mobilesdk_app_id": "1:61017014612:android:632cbed722c52ba2ac88c1",
         "android_client_info": {
           "package_name": "com.example.notepad_dev"
         }
       },
       "oauth_client": [
         {
-          "client_id": "61017014612-fktgumhk5ud62ijalso4p1u5s6891oll.apps.googleusercontent.com",
+          "client_id": "61017014612-f5t8mjn0ur05ipd9rt6bout9cr5c5ton.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.notepad_dev",
+            "certificate_hash": "60b5907545d29188a3c14fb14abfe6951dc82bc0"
+          }
+        },
+        {
+          "client_id": "61017014612-876bn2seq19kl7pnr64tfrq0r3iq69pg.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -27,7 +35,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "61017014612-fktgumhk5ud62ijalso4p1u5s6891oll.apps.googleusercontent.com",
+              "client_id": "61017014612-876bn2seq19kl7pnr64tfrq0r3iq69pg.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
