@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/azul_medio">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="13dp"
+        android:elevation="10dp">
+
+        <ImageView
+            android:id="@+id/botaoInfoCriadorAPP"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:clickable="true"
+            android:contentDescription="@string/info_botao"
+            android:focusable="true"
+            android:src="@drawable/baseline_help_outline_24"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/botaoWallpapers"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:contentDescription="@string/wallpaper_botao"
+            android:focusable="true"
+            android:src="@drawable/baseline_imagesearch_roller_24"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/botaoLogout"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:contentDescription="@string/logout_botao"
+            android:focusable="true"
+            android:src="@drawable/baseline_exit_to_app_24"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
