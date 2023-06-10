@@ -1,5 +1,6 @@
 package com.example.notepad_dev;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,7 +9,11 @@ import android.view.View;
 
 import com.example.notepad_dev.databinding.ActivityHomeBinding;
 import com.example.notepad_dev.databinding.ActivityNewNotePadBinding;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.Timestamp;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
 
 public class NewNotePad_Activity extends AppCompatActivity {
     ActivityNewNotePadBinding binding;
@@ -46,22 +51,50 @@ public class NewNotePad_Activity extends AppCompatActivity {
         });
 
         binding.botaoSalvarNotePad.setOnClickListener(v->{
-
+            salvarNotePad();
         });
 
     }
 
-    private void salvarNotePad(){
+    void salvarNotePad(){
         String titulo = binding.notePadTitulo.getText().toString();
-        String texto =  binding.notePadTexto.getText().toString();
+        String texto = binding.notePadTexto.getText().toString();
 
-        if (titulo==null||titulo.isEmpty()){
+        if (titulo.isEmpty()){
             binding.notePadTitulo.setError("Necessário inserir um titulo.");
             return;
         }
+        Note note = new Note();
+        note.setTitulo(titulo);
+        note.setTexto(texto);
+        note.setTimestamp(Timestamp.now());
 
-
+        salvarNoteFirebase(note);
     }
+
+    void salvarNoteFirebase(Note note){
+        DocumentReference documentReference;
+        documentReference = Utilidades.getCollectionReferenceDeNotepads().document();
+
+        documentReference.set(note).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if (task.isSuccessful()){
+                    Utilidades.showToast(NewNotePad_Activity.this, "Notepad Adicionado com sucesso!");
+                    finish();
+                    abrirHome();
+                }else {
+                    Utilidades.showToast(NewNotePad_Activity.this, "Falha ao salvar o Notepad.");
+
+                }
+            }
+        });
+    }
+    private void abrirHome(){
+        Intent intent = new Intent(getApplicationContext(), Home_Activity.class );
+        startActivity(intent);
+    }
+
     private void abrirLogin() {
         Intent intent = new Intent(getApplicationContext(), Login_Activity.class);
         startActivity(intent);
