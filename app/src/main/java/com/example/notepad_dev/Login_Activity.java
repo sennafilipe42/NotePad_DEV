@@ -47,7 +47,7 @@ public class Login_Activity extends AppCompatActivity {
 
         FirebaseUser currentUser = mAuth.getCurrentUser();
         try {
-            Toast.makeText(getApplicationContext(), "Usuário: " + Objects.requireNonNull(currentUser).getEmail() + " Logado.", Toast.LENGTH_LONG).show();
+            Utilidades.showToast(Login_Activity.this, "Usuário: " + Objects.requireNonNull(currentUser).getEmail() + " Logado.");
             abrirHome();
             finish();
         }catch(Exception ignored) {
@@ -93,7 +93,7 @@ public class Login_Activity extends AppCompatActivity {
                         binding.editPassword.getText().toString());
 
                 }catch(Exception e){
-                    Toast.makeText(getApplicationContext(), "Campos vazios, verifique o Usuário e a Senha!", Toast.LENGTH_LONG).show();
+                    Utilidades.showToast(Login_Activity.this, "Campos vazios, verifique o Usuário e a Senha!");
                 }
 
             }
@@ -125,7 +125,7 @@ public class Login_Activity extends AppCompatActivity {
                         loginComGoogle(conta.getIdToken());
 
                     }catch(ApiException exception){
-                        Toast.makeText(getApplicationContext(), "Nenhum usuário Google logado no momento.", Toast.LENGTH_LONG).show();
+                        Utilidades.showToast(Login_Activity.this, "Nenhum usuário Google logado no momento.");
                         Log.d("Erro: ",exception.toString());
                     }
                 }
@@ -136,13 +136,11 @@ public class Login_Activity extends AppCompatActivity {
 
         mAuth.signInWithCredential(credencial).addOnCompleteListener(this, task -> {
             if(task.isSuccessful()){
-                Toast.makeText(getApplicationContext(), "Login com Google efetuado com Sucesso!", Toast.LENGTH_LONG).show();
+                Utilidades.showToast(Login_Activity.this, "Login com Google efetuado com Sucesso!");
                 abrirHome();
                 finish();
             }else {
-                Toast.makeText(getApplicationContext(), "Erro ao efetuar Login com Google.", Toast.LENGTH_LONG).show();
-
-
+                Utilidades.showToast(Login_Activity.this, "Erro ao efetuar Login com Google.");
             }
         });
     }
@@ -158,7 +156,7 @@ public class Login_Activity extends AppCompatActivity {
                 loginComGoogle(conta.getIdToken());
 
             }catch(ApiException exception){
-                Toast.makeText(getApplicationContext(), "Nenhum usuário Google logado no momento.", Toast.LENGTH_LONG).show();
+                Utilidades.showToast(Login_Activity.this, "Nenhum usuário Google logado no momento");
                 Log.d("Erro: ",exception.toString());
             }
         }
@@ -168,18 +166,13 @@ public class Login_Activity extends AppCompatActivity {
         mAuth.signInWithEmailAndPassword(usuario, senha)
                 .addOnCompleteListener(this, task -> {
                     if (task.isSuccessful()) {
-                        // Sign in success, update UI with the signed-in user's information
-                        //Log.d(TAG, "signInWithCredential:success");
                         FirebaseUser user = mAuth.getCurrentUser();
-                        Toast.makeText(getApplicationContext(), "Login efetuado com sucesso!", Toast.LENGTH_LONG).show();
+                        Utilidades.showToast(Login_Activity.this, "Login efetuado com sucesso!");
                         abrirHome();
                         finish();
-                        //updateUI(user);
                     } else {
-                        // If sign in fails, display a message to the user.
-                        //Log.w(TAG, "signInWithCredential:failure", task.getException());
-                        Toast.makeText(getApplicationContext(), "Erro para efetuar o Login.", Toast.LENGTH_LONG).show();
-                        //updateUI(null);
+
+                        Utilidades.showToast(Login_Activity.this, "Erro para efetuar o Login.");
                     }
                 });
 

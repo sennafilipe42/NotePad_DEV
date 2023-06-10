@@ -56,15 +56,14 @@ public class CreateAccount_Activity extends AppCompatActivity {
                 task -> {
                     if (task.isSuccessful()){
                         //Criação concluida
-                        Toast.makeText(getApplicationContext(), "Conta criada com sucesso!", Toast.LENGTH_LONG).show();
+                        Utilidades.showToast(CreateAccount_Activity.this, "Conta criada com sucesso!");
                         Objects.requireNonNull(mAuth.getCurrentUser()).sendEmailVerification();
                         mAuth.signOut();
                         abrirLogin();
 
                     }else{
                         //Falha na criação
-                        Toast.makeText(CreateAccount_Activity.this, Objects.requireNonNull(task.getException()).getLocalizedMessage(),Toast.LENGTH_LONG).show();
-
+                        Utilidades.showToast(CreateAccount_Activity.this, Objects.requireNonNull(task.getException()).getLocalizedMessage());
                     }
 
                 }
