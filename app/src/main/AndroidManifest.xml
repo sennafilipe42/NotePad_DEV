@@ -35,15 +35,6 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".Wallpapers_Activity"
-            android:exported="false"/>
-        <activity
-            android:name=".Info__Activity"
-            android:exported="false"/>
-        <activity
-            android:name=".NewNotePad_Activity"
-            android:exported="false"/>
-        <activity
             android:name=".Carregamento_Activity"
             android:exported="true">
             <intent-filter>
