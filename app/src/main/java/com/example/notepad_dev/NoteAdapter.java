@@ -25,36 +25,37 @@ public class NoteAdapter extends FirestoreRecyclerAdapter<Note, NoteAdapter.Note
 
     @Override
     protected void onBindViewHolder(@NonNull NoteViewHolder holder, int position, @NonNull Note note) {
-        holder.titleTextView.setText(note.titulo);
-        holder.contentTextView.setText(note.texto);
-        holder.timestampTextView.setText(Utilidades.TimestampData(note.timestamp));
+        holder.bind(note);
 
-        holder.itemView.setOnClickListener((v)->{
-            Intent intent = new Intent(context,NewNotePad_Activity.class);
-//            intent.putExtra("title",note.title);
-//            intent.putExtra("content",note.content);
-            String docId = this.getSnapshots().getSnapshot(position).getId();
-//            intent.putExtra("docId",docId);
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, NewNotePad_Activity.class);
+            String docId = getSnapshots().getSnapshot(position).getId();
+            intent.putExtra("docId", docId);
             context.startActivity(intent);
         });
-
     }
 
     @NonNull
     @Override
     public NoteViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_home,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_home, parent, false);
         return new NoteViewHolder(view);
     }
 
-    class NoteViewHolder extends RecyclerView.ViewHolder{
-        TextView titleTextView,contentTextView,timestampTextView;
+    class NoteViewHolder extends RecyclerView.ViewHolder {
+        TextView titleTextView, contentTextView, timestampTextView;
 
         public NoteViewHolder(@NonNull View itemView) {
             super(itemView);
             titleTextView = itemView.findViewById(R.id.tituloNotepad);
             contentTextView = itemView.findViewById(R.id.textoNotepad);
             timestampTextView = itemView.findViewById(R.id.timestampNotepad);
+        }
+
+        public void bind(Note note) {
+            titleTextView.setText(note.titulo);
+            contentTextView.setText(note.texto);
+            timestampTextView.setText(Utilidades.TimestampData(note.timestamp));
         }
     }
 }
