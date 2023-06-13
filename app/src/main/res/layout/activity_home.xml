@@ -11,10 +11,15 @@
         layout="@layout/toolbar_activity_home"/>
 
     <androidx.recyclerview.widget.RecyclerView
+
         android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbarHome" />
+        android:layout_below="@id/toolbarHome"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addNotePAD"
