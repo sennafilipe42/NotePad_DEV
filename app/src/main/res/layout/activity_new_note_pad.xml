@@ -41,6 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/titulo_notepad"
+            android:textSize="28sp"
             android:textAlignment="center"
             android:textStyle="italic"
             tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize"
@@ -49,26 +50,47 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
+        android:layout_width="333dp"
+        android:layout_height="385dp"
         android:layout_marginLeft="40dp"
+        android:layout_marginTop="180dp"
         android:layout_marginRight="40dp"
-        android:backgroundTint="@color/purple"
         android:padding="16dp">
 
         <EditText
             android:id="@+id/notePadTexto"
             android:layout_width="match_parent"
-            android:layout_height="282dp"
-            android:hint="@string/texto_notepad"
-            android:autofillHints="name"
-            android:textStyle="italic"
-            android:minLines="15"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/rounded_corner2"
             android:gravity="top"
-            android:inputType="textAutoCorrect"
-            tools:ignore="VisualLintTextFieldSize" />
+            android:hint="@string/texto_notepad"
+            android:minLines="15"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:importantForAutofill="no"
+            tools:ignore="TextFields" />
     </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/botaoRemoverNotepad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:backgroundTint="#F44336"
+        android:contentDescription="@string/contente_description7"
+        android:elevation="10dp"
+        android:src="@drawable/baseline_delete_24"
+        android:tint="@color/light_mode"
+        app:rippleColor="@color/light_mode"
+        app:tint="@color/light_mode"
+        app:useCompatPadding="true"
+        tools:ignore="ImageContrastCheck"
+        android:visibility="gone"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/botaoSalvarNotePad"
