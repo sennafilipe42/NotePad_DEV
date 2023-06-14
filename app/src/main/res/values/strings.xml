@@ -17,6 +17,7 @@
     <string name="contente_description4">TituloPagina</string>
     <string name="contente_description5">TituloNotePad</string>
     <string name="contente_description6">TextoNotepad</string>
+    <string name="contente_description7">BotaoRemover</string>
     <string name="title_activity_main2">MainActivity2</string>
     <string name="logout_botao">LogOut"</string>
     <string name="wallpaper_botao">Wallpapers""</string>
@@ -24,6 +25,7 @@
     <string name="titulo_pagina">Adicionar Novo NotePad</string>
     <string name="titulo_notepad">Titulo</string>
     <string name="texto_notepad">Escreva alguma coisa…</string>
+    <string name="titulo_editar_notepad">Edite seu notepad</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>

@@ -1,16 +1,13 @@
 package com.example.notepad_dev;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.notepad_dev.databinding.ActivityHomeBinding;
 import com.example.notepad_dev.databinding.ActivityNewNotePadBinding;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.Timestamp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
@@ -19,6 +16,7 @@ public class NewNotePad_Activity extends AppCompatActivity {
     ActivityNewNotePadBinding binding;
     String titulo, texto, docId;
     boolean modoEdicao = false;
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +49,7 @@ public class NewNotePad_Activity extends AppCompatActivity {
 
         if(docId!=null && !docId.isEmpty()){
             modoEdicao = true;
+            binding.botaoRemoverNotepad.setVisibility(View.VISIBLE);
         }
 
         binding.notePadTitulo.setText(titulo);
@@ -63,9 +62,9 @@ public class NewNotePad_Activity extends AppCompatActivity {
 
 
 
-        binding.botaoSalvarNotePad.setOnClickListener(v->{
-            salvarNotePad();
-        });
+        binding.botaoSalvarNotePad.setOnClickListener(v-> salvarNotePad());
+
+        binding.botaoRemoverNotepad.setOnClickListener(v-> removerNotepadFirebase());
 
     }
 
@@ -95,29 +94,41 @@ public class NewNotePad_Activity extends AppCompatActivity {
             documentReference = Utilidades.getCollectionReferenceDeNotepads().document();
         }
 
-        documentReference.set(note).addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
-                if (task.isSuccessful()){
+        documentReference.set(note).addOnCompleteListener(task -> {
+            if (task.isSuccessful()){
 
-                    if(modoEdicao){
-                        Utilidades.showToast(NewNotePad_Activity.this, "Notepad Editado com sucesso!");
-                        finish();
-                        abrirHome();
-                    }else{
-                        Utilidades.showToast(NewNotePad_Activity.this, "Notepad Adicionado com sucesso!");
-                        finish();
-                        abrirHome();
-                    }
-
-
-                }else {
-                    Utilidades.showToast(NewNotePad_Activity.this, "Falha ao salvar o Notepad.");
-
+                if(modoEdicao){
+                    Utilidades.showToast(NewNotePad_Activity.this, "Notepad Editado com sucesso!");
+                    finish();
+                    abrirHome();
+                }else{
+                    Utilidades.showToast(NewNotePad_Activity.this, "Notepad Adicionado com sucesso!");
+                    finish();
+                    abrirHome();
                 }
+            }else {
+                Utilidades.showToast(NewNotePad_Activity.this, "Falha ao salvar o Notepad.");
+
             }
         });
     }
+
+    void removerNotepadFirebase(){
+        DocumentReference documentReference;
+        documentReference = Utilidades.getCollectionReferenceDeNotepads().document(docId);
+        documentReference.delete().addOnCompleteListener(task -> {
+            if (task.isSuccessful()){
+                Utilidades.showToast(NewNotePad_Activity.this, "Notepad removido com sucesso!");
+                finish();
+                abrirHome();
+            }else {
+                Utilidades.showToast(NewNotePad_Activity.this, "Falha ao remover o Notepad.");
+
+            }
+        });
+    }
+
+
     private void abrirHome(){
         Intent intent = new Intent(getApplicationContext(), Home_Activity.class );
         startActivity(intent);
