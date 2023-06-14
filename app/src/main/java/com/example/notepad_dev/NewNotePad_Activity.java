@@ -17,6 +17,8 @@ import com.google.firebase.firestore.DocumentReference;
 
 public class NewNotePad_Activity extends AppCompatActivity {
     ActivityNewNotePadBinding binding;
+    String titulo, texto, docId;
+    boolean modoEdicao = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,13 +44,24 @@ public class NewNotePad_Activity extends AppCompatActivity {
             abrirLogin();
         });
 
-        binding.notePadTitulo.setOnClickListener(v->{
 
-        });
+        titulo = getIntent().getStringExtra("titulo");
+        texto = getIntent().getStringExtra("texto");
+        docId = getIntent().getStringExtra("docId");
 
-        binding.notePadTexto.setOnClickListener(v->{
+        if(docId!=null && !docId.isEmpty()){
+            modoEdicao = true;
+        }
 
-        });
+        binding.notePadTitulo.setText(titulo);
+        binding.notePadTexto.setText(texto);
+
+        if (modoEdicao){
+            binding.tituloPagina.setText("Edite o seu NotePad");
+        }
+
+
+
 
         binding.botaoSalvarNotePad.setOnClickListener(v->{
             salvarNotePad();
@@ -74,15 +87,30 @@ public class NewNotePad_Activity extends AppCompatActivity {
 
     void salvarNoteFirebase(Note note){
         DocumentReference documentReference;
-        documentReference = Utilidades.getCollectionReferenceDeNotepads().document();
+
+        if(modoEdicao){
+            documentReference = Utilidades.getCollectionReferenceDeNotepads().document(docId);
+
+        }else{
+            documentReference = Utilidades.getCollectionReferenceDeNotepads().document();
+        }
 
         documentReference.set(note).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if (task.isSuccessful()){
-                    Utilidades.showToast(NewNotePad_Activity.this, "Notepad Adicionado com sucesso!");
-                    finish();
-                    abrirHome();
+
+                    if(modoEdicao){
+                        Utilidades.showToast(NewNotePad_Activity.this, "Notepad Editado com sucesso!");
+                        finish();
+                        abrirHome();
+                    }else{
+                        Utilidades.showToast(NewNotePad_Activity.this, "Notepad Adicionado com sucesso!");
+                        finish();
+                        abrirHome();
+                    }
+
+
                 }else {
                     Utilidades.showToast(NewNotePad_Activity.this, "Falha ao salvar o Notepad.");
 
