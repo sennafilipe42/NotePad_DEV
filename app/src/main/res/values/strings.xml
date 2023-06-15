@@ -26,6 +26,8 @@
     <string name="titulo_notepad">Titulo</string>
     <string name="texto_notepad">Escreva alguma coisa…</string>
     <string name="titulo_editar_notepad">Edite seu notepad</string>
+    <string name="titulo_tema">Dark/Light mode</string>
+    <string name="nome_botao_tema">Trocar de tema:</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>

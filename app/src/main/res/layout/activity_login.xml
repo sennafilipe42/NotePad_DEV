@@ -53,13 +53,17 @@
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:text="@string/edit_botao"
-            android:textColorHighlight="@color/light_mode"/>
+            style="@style/BOTAO_TEMA"
+            android:textColor="@color/light_mode"
+            android:background="@drawable/rounded_corner2"/>
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:text="@string/edit_escolha" />
+            android:text="@string/edit_escolha"
+            android:layout_marginTop="10dp"
+            style="@style/TEXT_TEMA"/>
 
         <com.google.android.gms.common.SignInButton
             android:id="@+id/botaoGoogle"
@@ -74,13 +78,15 @@
     <LinearLayout
         android:layout_width="222dp"
         android:layout_height="wrap_content"
-        android:gravity="center|fill_vertical">
+        android:gravity="center|fill_vertical"
+        android:layout_marginTop="10dp">
 
         <TextView
             android:id="@+id/text_nao_tem_conta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_nao_tem_conta" />
+            android:text="@string/text_nao_tem_conta"
+            style="@style/TEXT_TEMA"/>
 
         <TextView
             android:id="@+id/link_criar_conta"
@@ -88,7 +94,8 @@
             android:layout_height="16dp"
             android:text="@string/link_criar_conta"
             android:textAllCaps="false"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            style="@style/TEXT_TEMA"/>
     </LinearLayout>
 
 

@@ -13,12 +13,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start|top"
+        android:contentDescription="@string/contente_description1"
         android:src="@android:drawable/ic_menu_revert"
-        app:backgroundTint="@color/azul_medio"
+        android:tint="@color/light_mode"
+        app:backgroundTint="#8C8A8F"
         app:rippleColor="@color/light_mode"
         app:tint="@color/light_mode"
-        app:useCompatPadding="true"
-        android:contentDescription="@string/contente_description1" />
+        app:useCompatPadding="true" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,7 +41,8 @@
             android:layout_height="wrap_content"
             android:textStyle="italic|bold"
             android:textSize="20sp"
-            android:text="@string/criar_conta_texto" />
+            android:text="@string/criar_conta_texto"
+            style="@style/TEXT_TEMA"/>
 
         <EditText
             android:id="@+id/editTextTextEmailAddress"
@@ -49,7 +51,8 @@
             android:ems="10"
             android:autofillHints="emailAddress"
             android:hint="@string/edit_usuario"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            style="@style/TEXT_TEMA"/>
 
         <EditText
             android:id="@+id/editTextTextPassword"
@@ -58,7 +61,8 @@
             android:ems="10"
             android:autofillHints="password"
             android:hint="@string/edit_senha"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            style="@style/TEXT_TEMA"/>
 
         <EditText
             android:id="@+id/editTextTextPassword2"
@@ -67,7 +71,8 @@
             android:ems="10"
             android:autofillHints="password"
             android:hint="@string/edit_repetir_senha"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            style="@style/TEXT_TEMA"/>
 
         <Button
             android:id="@+id/buttonCriarEntrar"
@@ -75,7 +80,9 @@
             android:layout_height="48dp"
             android:gravity="center"
             android:text="@string/edit_botao_criar"
-            android:textColorHighlight="@color/light_mode" />
+            style="@style/BOTAO_TEMA"
+            android:textColor="@color/light_mode"
+            android:background="@drawable/rounded_corner2"/>
 
     </LinearLayout>
 </RelativeLayout>
