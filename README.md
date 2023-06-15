@@ -1,8 +1,12 @@
 # NotePad_DEV
 Nesse repositório se encontra o projeto feito para cadeira de COMPUTACAO PARA DISPOSITIVOS MOVEIS, onde foi criado um APP Bloco de Notas chamado NotePad_DEV.
+--
 Grupo: Filipe Senna
+--
 Universidade: UniRitter
+--
 Cadeira: Computação para Dispositivos Móveis
+--
 
 Implementações necessárias para entrega do Projeto:
 
@@ -19,9 +23,8 @@ Implementações necessárias para entrega do Projeto:
 - ✔️Pode usar persistência em SQLite(usado FireBase Store);
 
 - ✔️Deve usar SharedPreferences;
-
+- 
 Implementações criadas para o projeto:
-
 
 🔥 Login com API FirebaseAuth:
 
