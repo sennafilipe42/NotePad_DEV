@@ -8,7 +8,7 @@
     tools:ignore="UseSwitchCompatOrMaterialXml">
 
     <include
-        android:id="@+id/toolbarHome"
+        android:id="@+id/toolbarTema"
         layout="@layout/toolbar_activity_home"/>
 
     <LinearLayout

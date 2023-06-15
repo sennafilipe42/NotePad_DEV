@@ -26,13 +26,13 @@ public class NewNotePad_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_new_note_pad);
         setContentView(view);
 
-        binding.toolbarNewNotePad.botaoInfoCriadorAPP.setOnClickListener(v->{
-            abrirInfo();
+        binding.toolbarNewNotePad.botaoHome.setOnClickListener(v -> {
+            abrirHome();
             finish();
         });
 
         binding.toolbarNewNotePad.botaoTema.setOnClickListener(v->{
-            abrirWallpapers();
+            abrirTema();
             finish();
         });
 
@@ -58,8 +58,6 @@ public class NewNotePad_Activity extends AppCompatActivity {
         if (modoEdicao){
             binding.tituloPagina.setText("Edite o seu NotePad");
         }
-
-
 
 
         binding.botaoSalvarNotePad.setOnClickListener(v-> salvarNotePad());
@@ -139,13 +137,10 @@ public class NewNotePad_Activity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void abrirWallpapers() {
+    public void abrirTema() {
         Intent intent = new Intent(getApplicationContext(), Tema_Activity.class);
         startActivity(intent);
     }
 
-    public void abrirInfo() {
-        Intent intent = new Intent(getApplicationContext(), Info__Activity.class);
-        startActivity(intent);
-    }
+
 }

@@ -1,5 +1,6 @@
 package com.example.notepad_dev;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -34,11 +35,6 @@ public class Home_Activity extends AppCompatActivity {
             abrirTema();
         });
 
-        binding.toolbarHome.botaoInfoCriadorAPP.setOnClickListener(v -> {
-            finish();
-            abrirInfo();
-        });
-
         binding.addNotePAD.setOnClickListener(v -> {
             finish();
             abrirNewNotePad();
@@ -69,6 +65,7 @@ public class Home_Activity extends AppCompatActivity {
         noteAdapter.stopListening();
 
     }
+    @SuppressLint("NotifyDataSetChanged")
     @Override
     protected void onResume(){
         super.onResume();
@@ -85,10 +82,7 @@ public class Home_Activity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void abrirInfo() {
-        Intent intent = new Intent(getApplicationContext(), Info__Activity.class);
-        startActivity(intent);
-    }
+
     private void abrirNewNotePad() {
         Intent intent = new Intent(getApplicationContext(), NewNotePad_Activity.class);
         startActivity(intent);

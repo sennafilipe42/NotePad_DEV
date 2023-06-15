@@ -12,24 +12,24 @@
         android:elevation="10dp">
 
         <ImageView
-            android:id="@+id/botaoInfoCriadorAPP"
+            android:id="@+id/botaoTema"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:clickable="true"
             android:contentDescription="@string/info_botao"
             android:focusable="true"
-            android:src="@drawable/baseline_help_outline_24"
+            android:src="@drawable/baseline_dark_mode_24"
             tools:ignore="TouchTargetSizeCheck" />
 
         <ImageView
-            android:id="@+id/botaoTema"
+            android:id="@+id/botaoHome"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_centerHorizontal="true"
             android:clickable="true"
             android:contentDescription="@string/wallpaper_botao"
             android:focusable="true"
-            android:src="@drawable/baseline_imagesearch_roller_24"
+            android:src="@drawable/baseline_home_24"
             tools:ignore="TouchTargetSizeCheck" />
 
         <ImageView
