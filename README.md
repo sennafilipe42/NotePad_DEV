@@ -79,29 +79,20 @@ Implementações criadas para o projeto:
 
 🎉 Telas do projeto NotePad_DEV:
 
-      Carregamento_Activity: 
-      ![Carregamento](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/037d2396-d7ef-4804-a4c4-f1d7b7078587)
-
-  Login_Activity:
-    ![Login_LightMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/d87787cd-7c0c-4b98-8cc2-7f6f4f1d1318)
-    ![Login_DarkMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/23d752eb-76df-408c-be10-03fd5fcaa1f0)
-    
-  CreateAcctivity:
-    ![CreateAccount_LightMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/ed457d5e-e11c-4c13-9a0d-990cb5caaad7)
-    ![CreateAccountDarkMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/b829a822-136c-4b74-a547-2bd2bfd204a0)
-
-  Home_Activity:
-    ![Home_DarkMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/24925270-a482-46fc-8a13-c02a1a3e9012)
-    ![Home_LightMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/4e46d8b7-f50d-4450-a8e8-1bf6bdb9cff8)
-  
-  NewNotePad_Activity:
-    ![NewNotePad_LightMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/465c248b-a244-49eb-b88c-b2c9c6139a50)
-    ![NewNotePad_DarkMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/7c490d78-c429-4a88-883a-e6743a88b006)
-
-  Tema_Activity: 
-    ![Tema_DarkMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/03268f9a-1bb7-4494-8ad0-f82873e7d5a8)
-    ![Tema_LightMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/80f1e142-51ad-498a-9316-97a75d11296f)
-
+   
+   ![Carregamento](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/037d2396-d7ef-4804-a4c4-f1d7b7078587)
+   ![Login_LightMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/d87787cd-7c0c-4b98-8cc2-7f6f4f1d1318)
+   ![Login_DarkMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/23d752eb-76df-408c-be10-03fd5fcaa1f0)
+   ![CreateAccount_LightMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/ed457d5e-e11c-4c13-9a0d-990cb5caaad7)
+   ![CreateAccountDarkMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/b829a822-136c-4b74-a547-2bd2bfd204a0)
+   ![Home_LightMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/4e46d8b7-f50d-4450-a8e8-1bf6bdb9cff8)
+   ![Home_DarkMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/24925270-a482-46fc-8a13-c02a1a3e9012)
+   ![NewNotePad_LightMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/465c248b-a244-49eb-b88c-b2c9c6139a50)
+   ![NewNotePad_DarkMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/7c490d78-c429-4a88-883a-e6743a88b006)
+   ![EditDeleteNotepad_LightMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/fe310b25-d234-499b-904d-650d77ce32ee)
+   ![EditDeleteNotepad_DarkMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/dedb77e8-1eae-4ec7-8949-9833fbfd1003)
+   ![Tema_LightMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/80f1e142-51ad-498a-9316-97a75d11296f)
+   ![Tema_DarkMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/03268f9a-1bb7-4494-8ad0-f82873e7d5a8)
  
    
 
