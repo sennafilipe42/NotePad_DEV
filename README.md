@@ -49,25 +49,25 @@ Implementações criadas para o projeto:
     Durante o meu aprendizado, trabalhei no desenvolvimento de um aplicativo que possui várias telas e funcionalidades. 
     Abaixo estão as principais tarefas que realizei e o que aprendi com cada uma delas:
 
-    **Carregamento_Activity:** Implementei uma tela de carregamento para exibir ao iniciar o aplicativo. 
+    Carregamento_Activity: Implementei uma tela de carregamento para exibir ao iniciar o aplicativo. 
     Aprendi a criar uma experiência mais agradável para o usuário, fornecendo uma transição suave entre o momento em que 
     o aplicativo é aberto e quando está pronto para uso.
 
-    **CreateAccount_Activity:** Desenvolvi uma tela que permite aos usuários criar uma conta usando o Firebase. 
+    CreateAccount_Activity: Desenvolvi uma tela que permite aos usuários criar uma conta usando o Firebase. 
     Com essa funcionalidade, aprendi a utilizar recursos de autenticação do Firebase para permitir que os usuários se 
     registrem no aplicativo de forma segura e confiável.
 
-    **Home_Activity:** Criei a tela principal do aplicativo, onde são exibidos os NotePADs usando RecyclerView. Aprendi a organizar e apresentar 
+    Home_Activity: Criei a tela principal do aplicativo, onde são exibidos os NotePADs usando RecyclerView. Aprendi a organizar e apresentar 
     informações relevantes para os usuários de maneira eficiente, proporcionando uma experiência de usuário intuitiva.
 
-    **Login_Activity:** Implementei uma tela de login que permite aos usuários acessarem o aplicativo usando uma conta do Google
+    Login_Activity: Implementei uma tela de login que permite aos usuários acessarem o aplicativo usando uma conta do Google
     ou uma conta Firebase criada anteriormente. Com essa funcionalidade, aprendi a utilizar recursos de autenticação do Firebase 
     para validar as credenciais dos usuários e garantir a segurança do acesso ao aplicativo.
 
-    **NewNotePad_Activity:** Criei uma tela para a criação, edição e exclusão de notepads, utilizando o Firestore Database. 
+    NewNotePad_Activity: Criei uma tela para a criação, edição e exclusão de notepads, utilizando o Firestore Database. 
     Aprendi a integrar um banco de dados em tempo real ao aplicativo, permitindo aos usuários gerenciar suas anotações de forma dinâmica.
 
-    **Tema_Activity:** Desenvolvi uma tela para permitir que os usuários alterem entre os modos DarkMode e LightMode. 
+    Tema_Activity: Desenvolvi uma tela para permitir que os usuários alterem entre os modos DarkMode e LightMode. 
     Aprendi a implementar a troca de temas no aplicativo usando SharePreferences, proporcionando aos usuários a opção de personalizar 
     a aparência do aplicativo de acordo com suas preferências.
 
@@ -79,5 +79,29 @@ Implementações criadas para o projeto:
 
 🎉 Telas do projeto NotePad_DEV:
 
-    **Tema_Activity:** 
+  Carregamento_Activity:
+    ![Carregamento](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/037d2396-d7ef-4804-a4c4-f1d7b7078587)
+
+  Login_Activity:
+    ![Login_LightMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/d87787cd-7c0c-4b98-8cc2-7f6f4f1d1318)
+    ![Login_DarkMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/23d752eb-76df-408c-be10-03fd5fcaa1f0)
+    
+  CreateAcctivity:
+    ![CreateAccount_LightMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/ed457d5e-e11c-4c13-9a0d-990cb5caaad7)
+    ![CreateAccountDarkMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/b829a822-136c-4b74-a547-2bd2bfd204a0)
+
+  Home_Activity:
+    ![Home_DarkMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/24925270-a482-46fc-8a13-c02a1a3e9012)
+    ![Home_LightMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/4e46d8b7-f50d-4450-a8e8-1bf6bdb9cff8)
+  
+  NewNotePad_Activity:
+    ![NewNotePad_LightMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/465c248b-a244-49eb-b88c-b2c9c6139a50)
+    ![NewNotePad_DarkMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/7c490d78-c429-4a88-883a-e6743a88b006)
+
+  Tema_Activity: 
+    ![Tema_DarkMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/03268f9a-1bb7-4494-8ad0-f82873e7d5a8)
+    ![Tema_LightMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/80f1e142-51ad-498a-9316-97a75d11296f)
+
+ 
+   
 
