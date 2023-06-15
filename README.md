@@ -8,15 +8,15 @@ Implementações necessárias para entrega do Projeto:
 
 - ✔️Um login com validação remota (pode ser por mock com json-server);
 
-- Fazer consumo de uma API REST externa (pode ser por mock com json-server);
+- ✔️Fazer consumo de uma API REST externa (pode ser por mock com json-server);
 
 - ✔️Possuir navegação entre Activities;
 
-- Deve usar pelo menos 1 recylerView;
+- ✔️Deve usar pelo menos 1 recylerView;
 
 - ✔️Deve possui pelo menos 4 activities/interfaces
 
-- Pode usar persistência em SQLite;
+- ✔️Pode usar persistência em SQLite(usado FireBase Store);
 
 - Deve usar SharedPreferences;
 

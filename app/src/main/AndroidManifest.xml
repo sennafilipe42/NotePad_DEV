@@ -22,7 +22,7 @@
             android:name=".Info__Activity"
             android:exported="false" />
         <activity
-            android:name=".Wallpapers_Activity"
+            android:name=".Tema_Activity"
             android:exported="false" />
         <activity
             android:name=".CreateAccount_Activity"
@@ -32,9 +32,6 @@
             android:exported="false" />
         <activity
             android:name=".Login_Activity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".Carregamento_Activity"

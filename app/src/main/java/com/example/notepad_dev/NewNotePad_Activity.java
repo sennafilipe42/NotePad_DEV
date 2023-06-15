@@ -31,7 +31,7 @@ public class NewNotePad_Activity extends AppCompatActivity {
             finish();
         });
 
-        binding.toolbarNewNotePad.botaoWallpapers.setOnClickListener(v->{
+        binding.toolbarNewNotePad.botaoTema.setOnClickListener(v->{
             abrirWallpapers();
             finish();
         });
@@ -140,7 +140,7 @@ public class NewNotePad_Activity extends AppCompatActivity {
     }
 
     public void abrirWallpapers() {
-        Intent intent = new Intent(getApplicationContext(), Wallpapers_Activity.class);
+        Intent intent = new Intent(getApplicationContext(), Tema_Activity.class);
         startActivity(intent);
     }
 

@@ -29,9 +29,9 @@ public class Home_Activity extends AppCompatActivity {
             finish();
             abrirLogin();
         });
-        binding.toolbarHome.botaoWallpapers.setOnClickListener(v -> {
+        binding.toolbarHome.botaoTema.setOnClickListener(v -> {
             finish();
-            abrirWallpapers();
+            abrirTema();
         });
 
         binding.toolbarHome.botaoInfoCriadorAPP.setOnClickListener(v -> {
@@ -80,8 +80,8 @@ public class Home_Activity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void abrirWallpapers() {
-        Intent intent = new Intent(getApplicationContext(), Wallpapers_Activity.class);
+    private void abrirTema() {
+        Intent intent = new Intent(getApplicationContext(), Tema_Activity.class);
         startActivity(intent);
     }
 
