@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:gravity="center|center_vertical"
     android:orientation="vertical"
-    tools:context=".Login_Activity">
+    tools:context=".Login_Activity"
+    android:background="@drawable/login_backgorund">
 
 
     <LinearLayout
@@ -20,7 +21,7 @@
             android:layout_width="180dp"
             android:layout_height="180dp"
             android:contentDescription="@string/todo"
-            app:srcCompat="@drawable/teste" />
+            app:srcCompat="@drawable/notepad_logo" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
