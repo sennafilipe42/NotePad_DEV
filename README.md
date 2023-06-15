@@ -79,8 +79,8 @@ Implementações criadas para o projeto:
 
 🎉 Telas do projeto NotePad_DEV:
 
-  Carregamento_Activity:
-    ![Carregamento](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/037d2396-d7ef-4804-a4c4-f1d7b7078587)
+      Carregamento_Activity: 
+      ![Carregamento](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/037d2396-d7ef-4804-a4c4-f1d7b7078587)
 
   Login_Activity:
     ![Login_LightMode](https://github.com/sennafilipe42/NotePad_DEV/assets/54420330/d87787cd-7c0c-4b98-8cc2-7f6f4f1d1318)
