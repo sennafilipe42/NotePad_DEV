@@ -10,12 +10,16 @@
     tools:ignore="ExtraText"
     android:background="@drawable/background_geral">
 
+
+    <!-- ImageView para exibir o logotipo do Notepad -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:contentDescription="@string/todo"
         app:srcCompat="@drawable/notepad_logo" />
+
+    <!-- TextView para exibir o nome do aplicativo -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,6 +29,7 @@
         android:gravity="center"
         android:textStyle="bold" />
 
+    <!-- ProgressBar para exibir o indicador de progresso -->
     <ProgressBar
         android:layout_width="24dp"
         android:layout_height="24dp"

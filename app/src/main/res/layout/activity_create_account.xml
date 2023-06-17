@@ -8,6 +8,7 @@
     android:orientation="vertical"
     tools:context=".CreateAccount_Activity">
 
+    <!-- Botão de voltar -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/botaoBack"
         android:layout_width="wrap_content"
@@ -21,12 +22,14 @@
         app:tint="@color/light_mode"
         app:useCompatPadding="true" />
 
+    <!-- Layout principal -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="616dp"
         android:gravity="center"
         android:orientation="vertical">
 
+        <!-- ImageView para o ícone de criar conta -->
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="100dp"
@@ -35,6 +38,7 @@
             app:tint="#673AB7"
             android:contentDescription="@string/contente_description2" />
 
+        <!-- TextView para o texto "Criar Conta" -->
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
@@ -44,6 +48,7 @@
             android:text="@string/criar_conta_texto"
             style="@style/TEXT_TEMA"/>
 
+        <!-- EditText para o campo de e-mail -->
         <EditText
             android:id="@+id/editTextTextEmailAddress"
             android:layout_width="wrap_content"
@@ -54,6 +59,7 @@
             android:inputType="textEmailAddress"
             style="@style/TEXT_TEMA"/>
 
+        <!-- EditText para o campo de senha -->
         <EditText
             android:id="@+id/editTextTextPassword"
             android:layout_width="wrap_content"
@@ -64,6 +70,7 @@
             android:inputType="textPassword"
             style="@style/TEXT_TEMA"/>
 
+        <!-- EditText para o campo de repetir senha -->
         <EditText
             android:id="@+id/editTextTextPassword2"
             android:layout_width="wrap_content"
@@ -74,6 +81,7 @@
             android:inputType="textPassword"
             style="@style/TEXT_TEMA"/>
 
+        <!-- Botão para criar/entrar na conta -->
         <Button
             android:id="@+id/buttonCriarEntrar"
             android:layout_width="wrap_content"

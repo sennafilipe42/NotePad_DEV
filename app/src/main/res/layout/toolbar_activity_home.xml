@@ -11,6 +11,7 @@
         android:padding="13dp"
         android:elevation="10dp">
 
+        <!-- ImageView para o botão de tema -->
         <ImageView
             android:id="@+id/botaoTema"
             android:layout_width="35dp"
@@ -21,6 +22,7 @@
             android:src="@drawable/baseline_dark_mode_24"
             tools:ignore="TouchTargetSizeCheck" />
 
+        <!-- ImageView para o botão home -->
         <ImageView
             android:id="@+id/botaoHome"
             android:layout_width="35dp"
@@ -32,6 +34,7 @@
             android:src="@drawable/baseline_home_24"
             tools:ignore="TouchTargetSizeCheck" />
 
+        <!-- ImageView para o botão de logout -->
         <ImageView
             android:id="@+id/botaoLogout"
             android:layout_width="35dp"

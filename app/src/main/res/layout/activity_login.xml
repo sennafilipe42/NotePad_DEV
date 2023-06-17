@@ -9,19 +9,22 @@
     tools:context=".Login_Activity"
     android:background="@drawable/login_backgorund">
 
-
+    <!-- Layout principal -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center|fill_vertical"
         android:orientation="vertical">
 
+        <!-- Logo -->
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="180dp"
             android:layout_height="180dp"
             android:contentDescription="@string/todo"
             app:srcCompat="@drawable/notepad_logo" />
+
+        <!-- Título do aplicativo -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,6 +34,7 @@
             android:gravity="center"
             android:textStyle="bold" />
 
+        <!-- Campo de entrada de usuário -->
         <EditText
             android:id="@+id/editUser"
             android:layout_width="wrap_content"
@@ -40,6 +44,7 @@
             android:hint="@string/edit_usuario"
             android:inputType="textEmailAddress" />
 
+        <!-- Campo de entrada de senha -->
         <EditText
             android:id="@+id/editPassword"
             android:layout_width="wrap_content"
@@ -49,6 +54,7 @@
             android:hint="@string/edit_senha"
             android:inputType="textPassword" />
 
+        <!-- Botão de login -->
         <Button
             android:id="@+id/botaoEntrar"
             android:layout_width="wrap_content"
@@ -58,6 +64,7 @@
             android:textColor="@color/light_mode"
             android:background="@drawable/rounded_corner2"/>
 
+        <!-- Texto de escolha -->
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
@@ -66,6 +73,7 @@
             android:layout_marginTop="10dp"
             style="@style/TEXT_TEMA"/>
 
+        <!-- Botão de login do Google -->
         <com.google.android.gms.common.SignInButton
             android:id="@+id/botaoGoogle"
             android:layout_width="wrap_content"
@@ -75,13 +83,14 @@
 
     </LinearLayout>
 
-
+    <!-- Layout para criar uma conta -->
     <LinearLayout
         android:layout_width="222dp"
         android:layout_height="wrap_content"
         android:gravity="center|fill_vertical"
         android:layout_marginTop="10dp">
 
+        <!-- Texto "Não tem uma conta?" -->
         <TextView
             android:id="@+id/text_nao_tem_conta"
             android:layout_width="wrap_content"
@@ -89,6 +98,7 @@
             android:text="@string/text_nao_tem_conta"
             style="@style/TEXT_TEMA"/>
 
+        <!-- Texto "Cria conta" clicavel -->
         <TextView
             android:id="@+id/link_criar_conta"
             android:layout_width="wrap_content"
