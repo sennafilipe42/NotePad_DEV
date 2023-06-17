@@ -6,9 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".NewNotePad_Activity">
 
+    <!-- Inclusão da toolbar -->
     <include android:id="@+id/toolbarNewNotePad"
         layout="@layout/toolbar_activity_home"/>
 
+    <!-- Layout para o título da página -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -27,6 +29,7 @@
 
     </LinearLayout>
 
+    <!-- Layout para o título do Notepad -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,6 +40,7 @@
         android:padding="16dp"
         android:autofillHints="name">
 
+        <!-- Editext para o titulo do Notepad -->
         <EditText
             android:id="@+id/notePadTitulo"
             android:layout_width="match_parent"
@@ -51,6 +55,7 @@
             android:inputType="textAutoCorrect" />
     </LinearLayout>
 
+    <!-- Layout para o texto do Notepad -->
     <LinearLayout
         android:layout_width="333dp"
         android:layout_height="385dp"
@@ -59,6 +64,7 @@
         android:layout_marginRight="40dp"
         android:padding="16dp">
 
+        <!-- Editext para a mensagem do Notepad -->
         <EditText
             android:id="@+id/notePadTexto"
             android:layout_width="match_parent"
@@ -76,6 +82,7 @@
             tools:ignore="TextFields" />
     </LinearLayout>
 
+    <!-- Botão de remover o Notepad (inicialmente oculto) -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/botaoRemoverNotepad"
         android:layout_width="wrap_content"
@@ -94,6 +101,7 @@
         tools:ignore="ImageContrastCheck"
         android:visibility="gone"/>
 
+    <!-- Botão de add novo Notepad -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/botaoSalvarNotePad"
         android:layout_width="wrap_content"

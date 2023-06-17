@@ -7,15 +7,18 @@
     tools:context=".Tema_Activity"
     tools:ignore="UseSwitchCompatOrMaterialXml">
 
+    <!-- Inclusão da toolbar -->
     <include
         android:id="@+id/toolbarTema"
         layout="@layout/toolbar_activity_home"/>
 
+    <!-- Layout para o título do tema -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
+        <!-- Titulo da pagina de Tema -->
         <TextView
             android:id="@+id/tituloTema"
             android:layout_width="match_parent"
@@ -32,6 +35,7 @@
 
     </LinearLayout>
 
+    <!-- TextView para o nome do botão de tema -->
     <TextView
         android:id="@+id/nomeBotao"
         android:layout_width="match_parent"
@@ -44,6 +48,7 @@
         android:layout_marginTop="130dp"
         android:layout_marginStart="40dp"/>
 
+    <!-- Switch para selecionar o tema -->
     <Switch
         android:id="@+id/botaoSwitch"
         android:layout_width="50dp"

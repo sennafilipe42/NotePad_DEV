@@ -6,12 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".Home_Activity">
 
+    <!-- Inclui a toolbar da atividade -->
     <include
         android:id="@+id/toolbarHome"
         layout="@layout/toolbar_activity_home"/>
 
+    <!-- RecyclerView para exibir a lista de notas -->
     <androidx.recyclerview.widget.RecyclerView
-
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -21,6 +22,7 @@
         android:scrollbars="vertical"
         android:scrollbarStyle="insideOverlay"/>
 
+    <!-- FloatingActionButton para adicionar uma nova nota -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addNotePAD"
         android:layout_width="wrap_content"

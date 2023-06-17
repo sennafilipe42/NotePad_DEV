@@ -14,6 +14,7 @@ public class Note {
         return titulo;
     }
 
+    // Construtor vazio necessário para a integração com o Firebase Firestore
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
